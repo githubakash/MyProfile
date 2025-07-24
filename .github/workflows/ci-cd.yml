@@ -34,9 +34,15 @@ jobs:
       - name: Build the application
         run: npm run build --configuration=production
 
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
+      - name: 💾 Upload Build Artifact
+        uses: actions/upload-artifact@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist/my-profile-ui
-          publish_branch: gh-pages
+          name: angular-build
+          path: my-profile-ui/dist/my-profile-ui/
+
+      # - name: Deploy to GitHub Pages
+      #   uses: peaceiris/actions-gh-pages@v3
+      #   with:
+      #     github_token: ${{ secrets.GITHUB_TOKEN }}
+      #     publish_dir: ./dist/my-profile-ui
+      #     publish_branch: gh-pages
