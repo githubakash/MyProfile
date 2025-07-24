@@ -35,7 +35,7 @@ jobs:
         run: npm run build --configuration=production
 
       - name: 💾 Upload Build Artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: angular-build
           path: my-profile-ui/dist/my-profile-ui/
