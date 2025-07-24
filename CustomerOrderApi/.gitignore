@@ -1,0 +1,62 @@
+# Build results
+bin/
+obj/
+out/
+.vs/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Visual Studio Code
+.vscode/
+
+# Rider
+.idea/
+
+# Logs
+*.log
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# DotNet CLI
+project.lock.json
+project.fragment.lock.json
+
+# NuGet
+*.nupkg
+packages/
+*.snupkg
+
+# Publish folder
+wwwroot/
+publish/
+
+# SonarQube
+.sonar/
+.sonarqube/
+
+# Others
+*.swp
+*.bak
+*.tmp
+
+# Test Results
+TestResults/
+coverage/
+coverage.cobertura.xml
+*.coverage
+*.coveragexml
+
+# Azure Pipelines
+*.azure-pipelines.yml
+
+# Local secrets (only if used)
+secrets.json
